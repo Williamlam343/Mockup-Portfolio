@@ -11,8 +11,7 @@
   width: 100%;
   z-index: -5;
   background: linear-gradient(to left, rgb(0, 0, 0), white),
-    radial-gradient(circle at 100%, white, rgb(0, 0, 0)),
-    url(/mockup-portfolio/img/lake.jpg);
+    radial-gradient(circle at 100%, white, rgb(0, 0, 0));
   background-blend-mode: soft-light;
   background-attachment: fixed;
   background-position: center;
