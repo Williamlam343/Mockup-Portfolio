@@ -32,10 +32,11 @@ a {
 
 header {
   width: 100%;
+  right: 0;
   background-color: black;
   height: 4rem;
   color: white;
-  background-color: rgba(12, 12, 12, 0.884);
+  background-color: rgb(26, 20, 20);
   text-align: start;
 }
 header h2 {
@@ -51,12 +52,12 @@ header h2 {
   width: 100%;
   position: absolute;
   top: 2.5rem;
+  mix-blend-mode: lighten;
 }
 
 .item {
   position: relative;
   background-color: rgba(12, 12, 12, 0.685);
-  backdrop-filter: blur(5px);
   padding: 15px;
   margin: 0 15px 0 0;
   right: 5%;
@@ -64,23 +65,33 @@ header h2 {
 }
 
 .aboutmecontainer {
-  display: block;
+  display: flex;
   width: 95%;
   background-color: rgba(12, 12, 12, 0.685);
-  backdrop-filter: blur(5px);
-  height: 500px;
-  position: absolute;
-  top: 15rem;
+  min-height: 200px;
+  position: relative;
+  top: 10rem;
   margin: 2rem;
   border-radius: 20px;
 }
 
+.aboutmecontent {
+  display: block;
+  background-color: rgba(112, 99, 99, 0.274);
+  min-height: 400px;
+  width: 100%;
+  margin: 2%;
+  border-radius: 1rem;
+}
+
 h3 {
   mix-blend-mode: color-dodge;
+  z-index: 2;
   top: -2.2rem;
   left: 2rem;
+
   display: flex;
-  position: relative;
+  position: absolute;
   align-items: center;
   font-size: 48px;
   color: rgb(255, 255, 255);
@@ -90,10 +101,10 @@ h3 {
   display: block;
   width: 95%;
   background-color: rgba(12, 12, 12, 0.685);
-  backdrop-filter: blur(5px);
   position: relative;
   margin: 2rem;
-  top: 500px;
+  top: 20rem;
+  border-radius: 20px;
 }
 
 .myworkflex {
@@ -104,15 +115,17 @@ h3 {
 
 .workitem1 {
   flex: 1 1 100%;
-  background-color: red;
+  background-color: rgba(122, 116, 116, 0.247);
   min-height: 200px;
   margin: 2%;
+  border-radius: 1rem;
 }
 .workitem {
   flex: 1 0 10%;
-  background-color: rgb(112, 99, 99);
+  background-color: rgba(112, 99, 99, 0.274);
   min-height: 200px;
   margin: 2%;
+  border-radius: 1rem;
 }
 
 .mycontactscontainer {
