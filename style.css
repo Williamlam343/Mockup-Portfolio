@@ -60,6 +60,16 @@ header h2 {
   border-radius: 10px 0 10px 0;
 }
 
+.aboutmecontainer {
+  display: block;
+  position: relative;
+  background-color: black;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 1px;
+}
+
 .aboutme h3 {
   position: relative;
   height: 100vh;
