@@ -1,0 +1,23 @@
+{
+  "name": "mockup-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "tailwindcss build src/css.css -o public/css.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Williamlam343/Mockup-Portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Williamlam343/Mockup-Portfolio/issues"
+  },
+  "homepage": "https://github.com/Williamlam343/Mockup-Portfolio#readme",
+  "dependencies": {
+    "tailwindcss": "^2.2.7"
+  }
+}
