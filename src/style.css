@@ -122,7 +122,11 @@ h3 {
   border-radius: 1rem;
   background: linear-gradient(to bottom, white, transparent),
     radial-gradient(circle, transparent, rgb(236, 204, 145) 50%),
+<<<<<<< HEAD
     url(/img/bridge.jpg);
+=======
+    url(img/IMG_0226.jpg);
+>>>>>>> e323e0321c5a53b516cf4ec1047d9349beb99107
   animation: left-right 15s ease-in-out infinite;
   background-blend-mode: soft-light, soft-light;
   background-size: 100%;
