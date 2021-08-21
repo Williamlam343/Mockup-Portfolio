@@ -1,0 +1,146 @@
+@tailwind base;
+@tailwind components;
+@tailwind ulilities;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  animation: back 30s ease infinite;
+  background: linear-gradient(
+    45deg,
+    rgb(111, 197, 197),
+    rgb(216, 130, 145),
+    rgb(109, 223, 223),
+    rgb(157, 231, 157)
+  );
+
+  height: 210vh;
+  background-repeat: no-repeat;
+  background-size: 400% 400%;
+}
+
+@keyframes back {
+  0% {
+    background-position: 0% 80%;
+  }
+  50% {
+    background-position: 100% 20%;
+  }
+  100% {
+    background-position: 0% 80%;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  right: 0;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  background-color: rgb(26, 20, 20);
+  text-align: start;
+}
+header h2 {
+  margin: 10px;
+  font-size: 30px;
+
+  padding: 10px;
+}
+.container {
+  display: flex;
+  padding: 0 8% 0 0;
+  flex-direction: row-reverse;
+  background: black;
+  align-items: center;
+  position: relative;
+}
+
+.item {
+  position: relative;
+  background-color: rgba(12, 12, 12, 0.685);
+  margin: 12px;
+  top: 50%;
+  border-radius: 1rem;
+}
+
+.aboutmecontainer {
+  display: flex;
+  width: 45%;
+  background-color: rgba(12, 12, 12, 0.685);
+  min-height: 200px;
+  position: relative;
+  top: 10rem;
+  margin: 2rem;
+  border-radius: 20px;
+}
+
+.aboutmecontent {
+  display: block;
+  background-color: rgba(112, 99, 99, 0.274);
+  min-height: 400px;
+  width: 100%;
+  margin: 2%;
+  border-radius: 1rem;
+}
+
+h3 {
+  z-index: 2;
+  top: -2.2rem;
+  left: 2rem;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  font-size: 48px;
+  color: rgb(255, 255, 255);
+}
+
+.myworkcontainer {
+  display: block;
+  width: 95%;
+  background-color: rgba(12, 12, 12, 0.685);
+  position: relative;
+  margin: 2rem;
+  top: 20rem;
+  border-radius: 20px;
+}
+
+.myworkflex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.workitem1 {
+  flex: 1 1 100%;
+  background-color: rgba(122, 116, 116, 0.247);
+  min-height: 200px;
+  margin: 2%;
+  border-radius: 1rem;
+}
+.workitem {
+  flex: 1 0 10%;
+  background-color: rgba(112, 99, 99, 0.274);
+  min-height: 200px;
+  margin: 2%;
+  border-radius: 1rem;
+}
+
+.mycontactscontainer {
+  display: flex;
+  width: 95%;
+  background-color: rgba(12, 12, 12, 0.685);
+  position: relative;
+  margin: 2rem;
+  top: 30em;
+  border-radius: 20px;
+}
