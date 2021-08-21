@@ -122,7 +122,7 @@ h3 {
   border-radius: 1rem;
   background: linear-gradient(to bottom, white, transparent),
     radial-gradient(circle, transparent, rgb(236, 204, 145) 50%),
-    url(../img/IMG_0226.jpg);
+    url(img/IMG_0226.jpg);
   animation: left-right 15s ease-in-out infinite;
   background-blend-mode: soft-light, soft-light;
   background-size: 100%;
