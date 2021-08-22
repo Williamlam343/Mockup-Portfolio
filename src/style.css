@@ -10,13 +10,10 @@
 body {
   position: relative;
   width: 100%;
-  animation: back 15s ease infinite;
-
-  height: 210vh;
-  background-blend-mode: soft-light;
+  animation: back 15s ease infinite alternate;
+  height: 250vh;
   background-repeat: no-repeat;
   background-size: 400% 400%;
-  background-attachment: fixed;
 }
 
 @keyframes back {
@@ -24,10 +21,10 @@ body {
     background-position: 0% 80%;
   }
   50% {
-    background-position: 100% 20%;
+    background-position: 50% 50%;
   }
   100% {
-    background-position: 0% 80%;
+    background-position: 100% 0%;
   }
 }
 
@@ -37,40 +34,25 @@ a {
 }
 
 header {
-  display: flex;
-  width: 100%;
-  right: 0;
-  background-color: rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
-  background-color: rgb(26, 20, 20);
-  text-align: start;
 }
 header h2 {
-  margin: 10px;
-  font-size: 30px;
+}
 
-  padding: 10px;
+.myname {
 }
 .container {
-  display: flex;
-  padding: 0 8% 0 0;
-  flex-direction: row-reverse;
-  background: black;
-  align-items: center;
-  position: relative;
 }
 
 .item {
   position: relative;
-  background-color: rgba(12, 12, 12, 0.685);
-  margin: 12px;
-  top: 50%;
+  margin: 1.5rem;
   border-radius: 1rem;
+  max-width: 25rem;
 }
 
 .aboutmecontainer {
   display: flex;
-  width: 45%;
+  width: auto;
   background-color: rgba(12, 12, 12, 0.685);
   min-height: 200px;
   position: relative;
@@ -82,15 +64,16 @@ header h2 {
 .aboutmecontent {
   display: block;
   background-color: rgba(112, 99, 99, 0.274);
-  min-height: 400px;
-  width: 100%;
+
+  width: auto;
   margin: 2%;
+  height: fit-content;
   border-radius: 1rem;
 }
 
 h3 {
   z-index: 2;
-  top: -2.2rem;
+  top: -4rem;
   left: 2rem;
   display: flex;
   position: absolute;
@@ -101,7 +84,7 @@ h3 {
 
 .myworkcontainer {
   display: block;
-  width: 95%;
+  width: auto;
   background-color: rgba(12, 12, 12, 0.685);
   position: relative;
   margin: 2rem;
@@ -111,7 +94,7 @@ h3 {
 
 .myworkflex {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   justify-content: space-evenly;
 }
 
@@ -122,7 +105,10 @@ h3 {
   border-radius: 1rem;
   background: linear-gradient(to bottom, white, transparent),
     radial-gradient(circle, transparent, rgb(236, 204, 145) 50%),
-    url("/img/bridge.jpg");
+    url("../img/bridge.jpg");
+  background: linear-gradient(to bottom, white, transparent),
+    radial-gradient(circle, transparent, rgb(236, 204, 145) 50%),
+    url("/mockup-portfolio/img/bridge.jpg");
   animation: left-right 15s ease-in-out infinite;
   background-blend-mode: soft-light, soft-light;
   background-size: 100%;
@@ -154,10 +140,35 @@ h3 {
 
 .mycontactscontainer {
   display: flex;
-  width: 95%;
-  background-color: rgba(12, 12, 12, 0.685);
+  flex-direction: column;
   position: relative;
   margin: 2rem;
   top: 30em;
   border-radius: 20px;
+  align-items: center;
+}
+
+.curves {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  z-index: -1;
+}
+
+.curves svg {
+  position: relative;
+  display: block;
+  width: calc(129% + 1.3px);
+  height: 150px;
+}
+
+.curves .shape-fill {
+  fill: #000000;
+}
+
+.youtube {
+  background: url("https://w7.pngwing.com/pngs/936/468/png-transparent-youtube-logo-youtube-logo-computer-icons-subscribe-angle-rectangle-airplane.png");
 }
