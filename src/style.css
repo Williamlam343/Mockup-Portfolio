@@ -7,13 +7,17 @@
   padding: 0;
 }
 
+p {
+  padding: 1.5rem;
+}
+
 body {
   position: relative;
   width: 100%;
   animation: back 15s ease infinite alternate;
   height: 250vh;
   background-repeat: no-repeat;
-  background-size: 400% 400%;
+  background-size: cover;
 }
 
 @keyframes back {
@@ -33,21 +37,10 @@ a {
   color: white;
 }
 
-header {
-}
-header h2 {
-}
-
-.myname {
-}
-.container {
-}
-
 .item {
   position: relative;
   margin: 1.5rem;
   border-radius: 1rem;
-  max-width: 25rem;
 }
 
 .aboutmecontainer {
@@ -64,7 +57,7 @@ header h2 {
 .aboutmecontent {
   display: block;
   background-color: rgba(112, 99, 99, 0.274);
-
+  text-indent: 1cm;
   width: auto;
   margin: 2%;
   height: fit-content;
@@ -165,4 +158,32 @@ h3 {
 
 .curves .shape-fill {
   fill: #000000;
+}
+
+.fonts {
+  font-family: "Oxygen", sans-serif;
+}
+
+.glow-dynamic {
+  position: relative;
+  z-index: 1;
+}
+
+.glow-dynamic::after {
+  content: "";
+  position: absolute;
+  background: inherit;
+  z-index: -1;
+  width: 99%;
+  height: 98%;
+  top: 2px;
+  left: 0.4%;
+  filter: blur(2px);
+  opacity: 1;
+}
+
+.glow-blue-100 {
+  /* For each color (blue-100 here), for the `default` style */
+  box-shadow: 0 1px 3px 0 rgba(235, 248, 255, 0.4),
+    0 1px 2px 0 rgba(235, 248, 255, 0.24);
 }

@@ -18,6 +18,19 @@
   },
   "homepage": "https://github.com/Williamlam343/Mockup-Portfolio#readme",
   "dependencies": {
-    "tailwindcss": "^2.2.7"
+    "tailwindcss": "^2.2.7",
+    "tailwindcss-glow": "^2.0.0-alpha.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.3.2",
+    "postcss": "^8.3.6",
+    "postcss-loader": "^6.1.1"
+  },
+  "postcss": {
+    "parser": "sugarss",
+    "map": false,
+    "plugins": {
+      "postcss-plugin": {}
+    }
   }
 }
