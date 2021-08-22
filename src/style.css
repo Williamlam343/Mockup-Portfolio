@@ -163,27 +163,3 @@ h3 {
 .fonts {
   font-family: "Oxygen", sans-serif;
 }
-
-.glow-dynamic {
-  position: relative;
-  z-index: 1;
-}
-
-.glow-dynamic::after {
-  content: "";
-  position: absolute;
-  background: inherit;
-  z-index: -1;
-  width: 99%;
-  height: 98%;
-  top: 2px;
-  left: 0.4%;
-  filter: blur(2px);
-  opacity: 1;
-}
-
-.glow-blue-100 {
-  /* For each color (blue-100 here), for the `default` style */
-  box-shadow: 0 1px 3px 0 rgba(235, 248, 255, 0.4),
-    0 1px 2px 0 rgba(235, 248, 255, 0.24);
-}
