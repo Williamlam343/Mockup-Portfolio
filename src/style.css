@@ -12,29 +12,26 @@ p {
 }
 
 body {
-  position: relative;
   width: 100%;
-  animation: back 15s ease infinite alternate;
-  height: 250vh;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
-@keyframes back {
-  0% {
-    background-position: 0% 80%;
-  }
-  50% {
-    background-position: 50% 50%;
-  }
-  100% {
-    background-position: 100% 0%;
-  }
+.background {
+  z-index: -1000;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 a {
   text-decoration: none;
   color: white;
+}
+
+main {
+  position: relative;
+  height: fit-content;
 }
 
 .item {
@@ -49,7 +46,7 @@ a {
   background-color: rgba(12, 12, 12, 0.685);
   min-height: 200px;
   position: relative;
-  top: 10rem;
+
   margin: 2rem;
   border-radius: 20px;
 }
@@ -81,7 +78,6 @@ h3 {
   background-color: rgba(12, 12, 12, 0.685);
   position: relative;
   margin: 2rem;
-  top: 20rem;
   border-radius: 20px;
 }
 
@@ -134,7 +130,6 @@ h3 {
   flex-direction: column;
   position: relative;
   margin: 2rem;
-  top: 30em;
   border-radius: 20px;
   align-items: center;
 }
