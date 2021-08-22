@@ -108,7 +108,7 @@ h3 {
     url("../img/bridge.jpg");
   background: linear-gradient(to bottom, white, transparent),
     radial-gradient(circle, transparent, rgb(236, 204, 145) 50%),
-    url("/mockup-portfolio/img/bridge.jpg");
+    url("/img/bridge.jpg");
   animation: left-right 15s ease-in-out infinite;
   background-blend-mode: soft-light, soft-light;
   background-size: 100%;
