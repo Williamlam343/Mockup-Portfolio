@@ -1,198 +1,434 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/style.css">
-    <link rel="stylesheet" href="public/css.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oxygen&family=Permanent+Marker&display=swap" rel="stylesheet">
-
-
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="public/css.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxygen&family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Mock-up Portfolio</title>
-</head>
+  </head>
 
-<body class="text-xl fonts ">
+  <body class="fonts">
+    <!-- Background -->
     <div class="background bg-gradient-to-tr from-sky-300"></div>
-    <header class="">
 
-        <div class=" bg-black text-center py-10 ">
-            <h2 class="text-bluegray-100 text-5xl">William Lam
-            </h2>
+    <header class="relative">
+      <div class="bg-black text-center py-5">
+        <h2 class="text-bluegray-100 text-5xl">William Lam</h2>
+      </div>
+      <div
+        class="
+          bg-black
+          flex
+          md:justify-end md:px-5
+          items-center
+          text-center
+          bottom-20
+        "
+      >
+        <div
+          class="
+            flex-auto
+            min-w-max
+            -bottom-10
+            m-3
+            md:flex-auto md:m-5 md:py-1
+            py-2
+            md:px-2
+            text-xl text-bluegray-700
+            bg-gray-50
+            item
+            ring-4
+            ring-offset-4
+            ring-offset-sky-600
+            ring-offset-opacity-0
+            ring-white
+            ring-opacity-80
+          "
+        >
+          <a href="#">Portfolio</a>
         </div>
-        <div class=" bg-black flex justify-center items-center text-center">
-            <div
-                class="flex-auto m-3 md:flex-auto md:m-5 py-4 md:px-6 text-2xl text-bluegray-700 bg-gray-50 item ring-4 ring-offset-4 ring-offset-sky-600 ring-offset-opacity-0 ring-white ring-opacity-80 ">
-                <a href="#">Portfolio</a>
-            </div>
-            <div
-                class="flex-auto m-3 md:flex-auto m-2 md:m-5 py-4 md:px-6 text-2xl text-bluegray-700 bg-gray-50 item ring-4 ring-offset-4 ring-offset-sky-600 ring-offset-opacity-0 ring-white ring-opacity-80">
-                <a href="#Work">Work</a>
-            </div>
-            <div
-                class="flex-auto m-3 md:flex-auto md:m-5 py-4 md:px-6 text-2xl text-bluegray-700 bg-gray-50 item ring-4 ring-offset-4 ring-offset-sky-600 ring-offset-opacity-0 ring-white ring-opacity-80">
-                <a href="#Contact">Contact</a>
-            </div>
-            <div
-                class="flex-auto m-3 md:flex-auto md:m-5 py-4 md:px-6 text-2xl text-bluegray-700 bg-gray-50 item ring-4 ring-offset-4 ring-offset-sky-600 ring-offset-opacity-0 ring-white ring-opacity-80">
-                <a href="#">Resume</a>
-            </div>
+        <div
+          class="
+            flex-auto
+            -bottom-10
+            m-3
+            md:flex-auto md:m-5 md:py-1
+            py-2
+            md:px-2
+            text-xl text-bluegray-700
+            bg-gray-50
+            item
+            ring-4
+            ring-offset-4
+            ring-offset-sky-600
+            ring-offset-opacity-0
+            ring-white
+            ring-opacity-80
+          "
+        >
+          <a href="#Work">Work</a>
         </div>
-        <div class="curves">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
-                preserveAspectRatio="none">
-                <path
-                    d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
-                    opacity=".25" class="shape-fill"></path>
-                <path
-                    d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
-                    opacity=".5" class="shape-fill"></path>
-                <path
-                    d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
-                    class="shape-fill"></path>
-            </svg>
+        <div
+          class="
+            flex-auto
+            -bottom-10
+            m-3
+            md:flex-auto md:m-5 md:py-1
+            py-2
+            md:px-2
+            text-xl text-bluegray-700
+            bg-gray-50
+            item
+            ring-4
+            ring-offset-4
+            ring-offset-sky-600
+            ring-offset-opacity-0
+            ring-white
+            ring-opacity-80
+          "
+        >
+          <a href="#Contact">Contact</a>
         </div>
-
-
+        <div
+          class="
+            flex-auto
+            -bottom-10
+            m-3
+            md:flex-auto md:m-5 md:py-1
+            py-2
+            md:px-2
+            text-xl text-bluegray-700
+            bg-gray-50
+            item
+            ring-4
+            ring-offset-4
+            ring-offset-sky-600
+            ring-offset-opacity-0
+            ring-white
+            ring-opacity-80
+          "
+        >
+          <a href="#">Resume</a>
+        </div>
+      </div>
+      <div class="curves">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+            opacity=".25"
+            class="shape-fill"
+          ></path>
+          <path
+            d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+            opacity=".5"
+            class="shape-fill"
+          ></path>
+          <path
+            d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
     </header>
 
-
-
-    <main class="py-10">
-        <div
-            class="bg-white w-auto md:w-3/4 m-3 md:m-10 mb-40 shadow-2xl ring-4 ring-offset-4 ring-offset-sky-600 ring-offset-opacity-0 ring-white ring-opacity-80 aboutmecontainer">
-            <div class="aboutme">
-                <h3 class="text-5xl text-gray-900 w-full">About me</h3>
-            </div>
-            <div
-                class="p-1 m-5 md:p-5 md:m-10 ring-4 ring-gray-300 ring-opacity-50  relative bg-gray-300 aboutmecontent">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto illum exercitationem quas ex
-                    sapiente doloremque dolores nesciunt ipsa, eum illo perspiciatis adipisci pariatur sed magnam cum
-                    quod consequatur. Totam, nihil?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto illum exercitationem quas ex
-                    sapiente doloremque dolores nesciunt ipsa, eum illo perspiciatis adipisci pariatur sed magnam cum
-                    quod consequatur. Totam, nihil?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto illum exercitationem quas ex
-                    sapiente doloremque dolores nesciunt ipsa, eum illo perspiciatis adipisci pariatur sed magnam cum
-                    quod consequatur. Totam, nihil?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto illum exercitationem quas ex
-                    sapiente doloremque dolores nesciunt ipsa, eum illo perspiciatis adipisci pariatur sed magnam cum
-                    quod consequatur. Totam, nihil?</p>
-            </div>
+    <main class="">
+      <!-- About me Container -->
+      <div
+        class="
+          flex
+          bg-white
+          w-auto
+          md:w-3/4
+          m-3
+          md:m-10
+          mb-40
+          top-10
+          md:top-10
+          shadow-2xl
+          ring-4
+          ring-offset-4
+          ring-offset-sky-600
+          ring-offset-opacity-0
+          ring-white
+          ring-opacity-80
+          aboutmecontainer
+        "
+      >
+        <div class="aboutme">
+          <h3 class="text-3xl text-gray-900">About me</h3>
         </div>
-
-
         <div
-            class="bg-white w-auto m-3 md:m-10 mb-40 shadow-2xl top-20 ring-4 ring-offset-4 ring-offset-sky-600 ring-offset-opacity-0 ring-white ring-opacity-8 myworkcontainer">
-            <h3 id="Work" class="text-5xl text-gray-900">My Works</h3>
-            <div class="myworkflex flex-column md:flex-row">
-                <div class=" 
-                    p-1 m-5 md:p-5 md:m-10 
-                    ring-4 ring-gray-300 ring-opacity-50 
-                    ring-offset-4 ring-offset-bluegray-100 
-                    workitem1
-                    ">
-                    <span class="m-5 text-bluegray-600 text-4xl mix-blend-difference">Photography</span>
-                </div>
-                <div class="
-                    p-1 m-5 md:p-5 md:m-10 
-                    ring-4 ring-gray-300 ring-opacity-50
-                    ring-offset-bluegray-100 ring-offset-4
-                    bg-gray-300 
-                    workitem
-                    ">
-                    <span class=" m-5 text-bluegray-600 text-4xl mix-blend-difference"> Animations</span>
-                </div>
-                <div
-                    class="workitem p-1 m-5 md:p-5 md:m-10 ring-4 ring-gray-300 ring-opacity-50 ring-offset-4 ring-offset-bluegray-100 bg-gray-300">
-                    <span class=" m-5 text-bluegray-600 text-4xl mix-blend-difference">Memes</span>
-                </div>
-                <div
-                    class="workitem p-1 m-5 md:p-5 md:m-10 ring-4 ring-gray-300 ring-opacity-50 ring-offset-4 ring-offset-bluegray-100 bg-gray-300">
-                    <span class=" m-5 text-bluegray-600 text-4xl mix-blend-difference">Literature</span>
-                </div>
-            </div>
-
+          class="
+            p-1
+            m-5
+            md:p-5 md:m-10
+            ring-4 ring-gray-300 ring-opacity-50
+            relative
+            bg-gray-300
+            aboutmecontent
+          "
+        >
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+            illum exercitationem quas ex sapiente doloremque dolores nesciunt
+            ipsa, eum illo perspiciatis adipisci pariatur sed magnam cum quod
+            consequatur. Totam, nihil?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+            illum exercitationem quas ex sapiente doloremque dolores nesciunt
+            ipsa, eum illo perspiciatis adipisci pariatur sed magnam cum quod
+            consequatur. Totam, nihil?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+            illum exercitationem quas ex sapiente doloremque dolores nesciunt
+            ipsa, eum illo perspiciatis adipisci pariatur sed magnam cum quod
+            consequatur. Totam, nihil?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+            illum exercitationem quas ex sapiente doloremque dolores nesciunt
+            ipsa, eum illo perspiciatis adipisci pariatur sed magnam cum quod
+            consequatur. Totam, nihil?
+          </p>
         </div>
-        <div class="
-            flex relative flex-col md:flex-row 
-            p-1 m-5 md:p-5 md:m-10
-            top-40
-            ring-4 ring-offset-4 ring-offset-sky-600 ring-offset-opacity-0
-            ring-white ring-opacity-80 
-            bg-white 
+      </div>
+      <!-- Work Container -->
+      <div
+        class="
+          bg-white
+          m-3
+          md:m-10
+          mb-40
+          shadow-2xl
+          md:top-20
+          ring-4
+          ring-offset-4
+          ring-offset-sky-600
+          ring-offset-opacity-0
+          ring-white
+          ring-opacity-8
+          myworkcontainer
+        "
+      >
+        <h3 id="Work" class="text-3xl text-gray-900">My Works</h3>
+        <div class="myworkflex flex-column md:flex-row">
+          <div
+            class="
+              p-1
+              m-5
+              md:p-5 md:m-10
+              ring-4
+              ring-gray-300
+              ring-opacity-50
+              ring-offset-4
+              ring-offset-bluegray-100
+              workitem1
+            "
+          >
+            <span class="m-5 text-bluegray-600 text-2xl mix-blend-difference"
+              >Photography</span
+            >
+          </div>
+          <div
+            class="
+              p-1
+              m-5
+              md:p-5 md:m-10
+              ring-4
+              ring-gray-300
+              ring-opacity-50
+              ring-offset-bluegray-100
+              ring-offset-4
+              bg-gray-300
+              workitem
+            "
+          >
+            <span class="m-5 text-bluegray-600 text-2xl mix-blend-difference">
+              Animations</span
+            >
+          </div>
+          <div
+            class="
+              workitem
+              p-1
+              m-5
+              md:p-5 md:m-10
+              ring-4
+              ring-gray-300
+              ring-opacity-50
+              ring-offset-4
+              ring-offset-bluegray-100
+              bg-gray-300
+            "
+          >
+            <span class="m-5 text-bluegray-600 text-2xl mix-blend-difference"
+              >Memes</span
+            >
+          </div>
+          <div
+            class="
+              workitem
+              p-1
+              m-5
+              md:p-5 md:m-10
+              ring-4
+              ring-gray-300
+              ring-opacity-50
+              ring-offset-4
+              ring-offset-bluegray-100
+              bg-gray-300
+            "
+          >
+            <span class="m-5 text-bluegray-600 text-2xl mix-blend-difference"
+              >Literature</span
+            >
+          </div>
+        </div>
+      </div>
+      <!-- Contacts Container -->
+      <div>
+        <div
+          class="
+            flex
+            relative
+            flex-col
+            md:flex-row
+            m-3
+            md:m-10
+            mb-40
+            shadow-2xl
+            w-auto
+            h-auto
+            top-0
+            md:top-40
+            ring-4
+            ring-offset-4
+            ring-offset-sky-600
+            ring-offset-opacity-0
+            ring-white
+            ring-opacity-80
+            bg-white
             shadow-2xl
             contactscontainer
-            ">
+          "
+        >
+          <h3 class="text-3xl text-gray-900" id="Contact">My contacts</h3>
 
-            <h3 class="text-5xl text-gray-900" id="Contact">My contacts</h3>
-
-            <div class="
-                flex-1 relative  
-                py-6 px-5 m-6 w-auto
-                ring-4 ring-gray-300 ring-opacity-50
-                ring-offset-bluegray-100 ring-offset-4 
-                text-center 
-                bg-gray-300 rounded-2xl
-                contactsitem
-                ">
-
-                <a href="https://www.youtube.com/channel/#"> <span
-                        class="m-5 w-full text-bluegray-700 text-2xl">YouTube/channel</span></a>
-            </div>
-            <div class="
-                flex-auto relative  
-                py-6 m-6 w-full
-                ring-4 ring-gray-300 ring-opacity-50
-                ring-offset-bluegray-100 ring-offset-4 
-                text-center 
-                bg-gray-300 rounded-2xl
-                contactsitem
-                ">
-                <a href="https://github.com/Williamlam343"> <span
-                        class="m-5 text-bluegray-700 text-2xl">GitHub</span></a>
-            </div>
-            <div class="
-                flex-auto relative  
-                py-6 m-6 w-full
-                ring-4 ring-gray-300 ring-opacity-50
-                ring-offset-bluegray-100 ring-offset-4 
-                text-center 
-                bg-gray-300 rounded-2xl
-                contactsitem
-                ">
-                <span class="m-5 text-bluegray-700 text-2xl">555-5555</span>
-            </div>
-            <div class="
-                flex-auto relative  
-                py-6 m-6 w-full
-                ring-4 ring-gray-300 ring-opacity-50
-                ring-offset-bluegray-100 ring-offset-4 
-                text-center 
-                bg-gray-300 rounded-2xl
-                contactsitem
-                ">
-                <a href="#"> <span class="m-5 text-bluegray-700 text-2xl">johndoe111@gmail.com</span></a>
-            </div>
-
+          <div
+            class="
+              flex-auto
+              md:flex-wrap
+              relative
+              p-6
+              px-5
+              m-5
+              w-full
+              ring-4
+              ring-gray-300
+              ring-opacity-50
+              ring-offset-bluegray-100
+              ring-offset-4
+              text-center
+              bg-gray-300
+              rounded-2xl
+              contactsitem
+            "
+          >
+            <a href="https://www.youtube.com/channel/#">
+              <span class="text-bluegray-700 text-2xl">YouTube/channel</span></a
+            >
+          </div>
+          <div
+            class="
+              flex-auto
+              relative
+              p-6
+              px-5
+              m-5
+              w-full
+              ring-4
+              ring-gray-300
+              ring-opacity-50
+              ring-offset-bluegray-100
+              ring-offset-4
+              text-center
+              bg-gray-300
+              rounded-2xl
+              contactsitem
+            "
+          >
+            <a href="https://github.com/Williamlam343">
+              <span class="text-bluegray-700 text-xl">GitHub</span></a
+            >
+          </div>
+          <div
+            class="
+              flex-auto
+              relative
+              p-6
+              px-5
+              m-5
+              w-full
+              ring-4
+              ring-gray-300
+              ring-opacity-50
+              ring-offset-bluegray-100
+              ring-offset-4
+              text-center
+              bg-gray-300
+              rounded-2xl
+              contactsitem
+            "
+          >
+            <span class="text-bluegray-700 text-xl">555-5555</span>
+          </div>
+          <div
+            class="
+              flex-auto
+              relative
+              p-6
+              px-5
+              m-5
+              w-full
+              ring-4
+              ring-gray-300
+              ring-opacity-50
+              ring-offset-bluegray-100
+              ring-offset-4
+              text-center
+              bg-gray-300
+              rounded-2xl
+              contactsitem
+            "
+          >
+            <a href="#">
+              <span class="flex-1 text-bluegray-700 text-xl"
+                >johndoe111@gmail.com</span
+              ></a
+            >
+          </div>
         </div>
-
-
-
-
+      </div>
     </main>
 
     <footer>
-        <div class="relative py-1 w-full bg-black -bottom-40">
-        </div>
+      <div class="relative py-3 w-full bg-black bottom-0 md:-bottom-40"></div>
     </footer>
-
-
-</body>
-
+  </body>
 </html>
