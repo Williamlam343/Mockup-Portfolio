@@ -36,27 +36,22 @@ main {
 
 .item {
   position: relative;
-  margin: 1.5rem;
   border-radius: 1rem;
+  max-width: 200px;
 }
 
 .aboutmecontainer {
   display: flex;
   width: auto;
-  background-color: rgba(12, 12, 12, 0.685);
-  min-height: 200px;
   position: relative;
-
-  margin: 2rem;
   border-radius: 20px;
 }
 
 .aboutmecontent {
   display: block;
-  background-color: rgba(112, 99, 99, 0.274);
   text-indent: 1cm;
   width: auto;
-  margin: 2%;
+  margin: auto;
   height: fit-content;
   border-radius: 1rem;
 }
@@ -73,18 +68,14 @@ h3 {
 }
 
 .myworkcontainer {
-  display: block;
   width: auto;
-  background-color: rgba(12, 12, 12, 0.685);
   position: relative;
-  margin: 2rem;
   border-radius: 20px;
 }
 
 .myworkflex {
   display: flex;
   flex-flow: column wrap;
-  justify-content: space-evenly;
 }
 
 .workitem1 {
@@ -118,20 +109,18 @@ h3 {
 }
 
 .workitem {
-  flex: 1 0 10%;
-  background-color: rgba(112, 99, 99, 0.274);
+  flex: 1 1 25%;
   min-height: 200px;
-  margin: 2%;
   border-radius: 1rem;
 }
 
-.mycontactscontainer {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  margin: 2rem;
+.contactscontainer {
   border-radius: 20px;
   align-items: center;
+}
+
+.contactsitem {
+  border-radius: 1rem;
 }
 
 .curves {
