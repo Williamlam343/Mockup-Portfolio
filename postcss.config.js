@@ -1,10 +1,9 @@
 module.exports = {
-    parser: 'sugarss',
-    map: false,
-    plugins: {
-      'postcss-plugin': {
-        tailwindcss: {},
-        autoprefixer: {},
-      }
-    }
-  }
+  parser: "sugarss",
+  map: false,
+  plugins: {
+    tailwindcss: {},
+    "postcss-focus-visible": {},
+    autoprefixer: {},
+  },
+};
