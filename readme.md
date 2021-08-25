@@ -1,6 +1,6 @@
 # Mockup-Portfolio
 
-## William Lam
+Link: https://williamlam343.github.io/mockup-portfolio/
 
 A mock-up portfolio I designed using css and tailwind.
 
