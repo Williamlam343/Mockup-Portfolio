@@ -1,20 +1,57 @@
 @tailwind base;
 @tailwind components;
 @tailwind ulilities;
-
+/* universal selector */
 * {
   margin: 0;
   padding: 0;
 }
-
+/* element selectors */
 p {
   padding: 1.5rem;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+  height: 100%;
+  width: 100%;
+}
+
+h3 {
+  z-index: 2;
+  top: -4rem;
+  left: 2rem;
+  display: inline;
+  position: absolute;
+  align-items: center;
+  font-size: 48px;
+}
+
+/* background and body */
 body {
   width: 100%;
   height: 100vh;
 }
+
+.background {
+  z-index: -1000;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* header */
+
+.navigationitems {
+  position: relative;
+  border-radius: 1rem;
+  max-width: 200px;
+}
+
+/* figure */
 figure {
   display: block;
   width: 100%;
@@ -29,27 +66,13 @@ figure {
   background-repeat: no-repeat;
   border-radius: 0 0 1rem 1rem;
 }
-.background {
-  z-index: -1000;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-attachment: fixed;
-}
 
 main {
   position: relative;
-  top: 40%;
+  top: 50%;
   height: fit-content;
 }
-
-.item {
-  position: relative;
-  border-radius: 1rem;
-  max-width: 200px;
-}
-
+/* about me section */
 .aboutmecontainer {
   display: flex;
   width: auto;
@@ -65,17 +88,7 @@ main {
   height: fit-content;
   border-radius: 1rem;
 }
-
-h3 {
-  z-index: 2;
-  top: -4rem;
-  left: 2rem;
-  display: inline;
-  position: absolute;
-  align-items: center;
-  font-size: 48px;
-}
-
+/* My work section */
 .myworkcontainer {
   width: auto;
   position: relative;
@@ -87,7 +100,7 @@ h3 {
   flex-flow: column wrap;
 }
 
-.workitem1 {
+.workphotography {
   flex: 1 1 100%;
   min-height: 300px;
   border-radius: 1rem;
@@ -97,11 +110,7 @@ h3 {
   background-position-y: 70%;
   background-position-x: 40%;
 }
-.workitem {
-  flex: 1 1 25%;
-  min-height: 200px;
-  border-radius: 1rem;
-}
+
 .workexcel {
   flex: 1 1 25%;
   min-height: 200px;
@@ -131,6 +140,8 @@ h3 {
   background-position-x: center;
   background-position-y: 10%;
 }
+
+/* contact section */
 .contactscontainer {
   border-radius: 20px;
   align-items: center;
@@ -143,43 +154,17 @@ h3 {
   max-height: 100px;
 }
 
-.custom-shape-divider-top-1629757286 {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  z-index: -1;
-}
-
-.custom-shape-divider-top-1629757286 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 79px;
-}
-
-.custom-shape-divider-top-1629757286 .shape-fill {
-  fill: #020000;
-}
-
 .fonts {
   font-family: "Oxygen", sans-serif;
 }
 
-a {
-  text-decoration: none;
-  color: white;
-  height: 100%;
-  width: 100%;
-}
-
+/* footer */
 footer {
   position: relative;
-  bottom: -18rem;
+  bottom: -25rem;
 }
 
+/* Media Response */
 @media screen and (min-width: 768px) {
   figure {
     background-position-y: 45%;
@@ -187,6 +172,8 @@ footer {
     height: 50vh;
   }
   footer {
-    bottom: -40rem;
+    bottom: -45rem;
+  }
+  main {
   }
 }
