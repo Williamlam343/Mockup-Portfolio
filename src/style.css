@@ -1,6 +1,6 @@
 @tailwind base;
 @tailwind components;
-@tailwind ulilities;
+@tailwind utilities;
 /* universal selector */
 * {
   margin: 0;
