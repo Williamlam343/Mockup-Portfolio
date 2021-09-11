@@ -104,11 +104,10 @@ main {
   flex: 1 1 100%;
   min-height: 300px;
   border-radius: 1rem;
-  background: url("../img/bridge.jpg");
+  background: url("../img/weatherdashboard.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-y: 70%;
-  background-position-x: 40%;
+  background-position-y: 20%;
 }
 
 .workexcel {
@@ -125,8 +124,9 @@ main {
   flex: 1 1 25%;
   min-height: 200px;
   border-radius: 1rem;
-  background: url("../img/animation.webp");
-  background-size: cover;
+  background: url("../img/day-planner.png");
+  background-size: 100%;
+  background-position-y: 100%;
   background-repeat: no-repeat;
 }
 
@@ -134,11 +134,11 @@ main {
   flex: 1 1 25%;
   min-height: 200px;
   border-radius: 1rem;
-  background: url("../img/memes.jpeg");
+  background: url("../img/quiz-app.png");
   background-size: 100%;
   background-repeat: no-repeat;
   background-position-x: center;
-  background-position-y: 10%;
+  background-position-y: 30%;
 }
 
 /* contact section */

@@ -1,128 +1,501 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="public/css.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxygen&family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <title>Mock-up Portfolio</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="src/style.css" />
-  <link rel="stylesheet" href="public/css.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Oxygen&family=Permanent+Marker&display=swap" rel="stylesheet" />
-  <title>Mock-up Portfolio</title>
-</head>
+  <body class="fonts">
+    <!-- Background -->
+    <div class="background bg-gray-100 mix-blend-difference"></div>
+    <!-- Header -->
+    <header class="relative divide-4 divide-white">
+      <section class="bg-black text-center py-5">
+        <h2 class="text-bluegray-100 text-5xl">William Lam</h2>
+      </section>
+      <section
+        class="
+          bg-black
+          flex
+          md:justify-end md:px-5
+          items-center
+          text-center
+          bottom-20
+        "
+      >
+        <nav
+          class="
+            shadow-2xl
+            flex-auto
+            -bottom-10
+            m-3
+            md:flex-auto md:m-5 md:py-0
+            py-0
+            md:px-0
+            text-xl text-bluegray-700
+            bg-gray-50
+            navigationitems
+            ring-4
+            ring-offset-4
+            ring-offset-bluegray-300
+            ring-offset-opacity-0
+            ring-gray-500
+            ring-opacity-80
+            transition
+            transform
+            border-2
+            hover:-translate-y-1 hover:bg-gray-300 hover:border-cyan-400
+          "
+        >
+          <a class="block m-0 p-1 md:p-1 w-full h-full" href="#">Portfolio</a>
+        </nav>
+        <nav
+          class="
+            flex-auto
+            -bottom-10
+            m-3
+            md:flex-auto md:m-5 md:py-0
+            py-0
+            md:px-0
+            text-xl text-bluegray-700
+            bg-gray-50
+            navigationitems
+            ring-4
+            ring-offset-4
+            ring-offset-bluegray-300
+            ring-offset-opacity-0
+            ring-gray-500
+            ring-opacity-80
+            transition
+            transform
+            border-2
+            hover:-translate-y-1 hover:bg-gray-300 hover:border-cyan-400
+          "
+        >
+          <a class="block m-0 p-1 md:p-1 w-full h-full" href="#Work">Work</a>
+        </nav>
+        <nav
+          class="
+            flex-auto
+            -bottom-10
+            m-3
+            md:flex-auto md:m-5 md:py-0
+            py-0
+            md:px-0
+            text-xl text-bluegray-700
+            bg-gray-50
+            navigationitems
+            ring-4
+            ring-offset-4
+            ring-offset-bluegray-300
+            ring-offset-opacity-0
+            ring-gray-500
+            ring-opacity-80
+            transition
+            transform
+            border-2
+            hover:-translate-y-1 hover:bg-gray-300 hover:border-cyan-400
+          "
+        >
+          <a class="block m-0 p-1 md:p-1 w-full h-full" href="#Contact"
+            >Contact</a
+          >
+        </nav>
+        <nav
+          class="
+            flex-auto
+            -bottom-10
+            m-3
+            md:flex-auto md:m-5 md:py-0
+            py-0
+            md:px-0
+            text-xl text-bluegray-700
+            bg-gray-50
+            navigationitems
+            ring-4
+            ring-offset-4
+            ring-offset-bluegray-300
+            ring-offset-opacity-0
+            ring-gray-500
+            ring-opacity-80
+            transition
+            transform
+            border-2
+            hover:-translate-y-1 hover:bg-gray-300 hover:border-cyan-400
+          "
+        >
+          <a class="block m-0 p-1 md:p-1 w-full h-full" href="#">Resume</a>
+        </nav>
+      </section>
+      <!-- Figure -->
+      <figure class="shadow-2xl"></figure>
+    </header>
+    <!-- Main -->
+    <main class="">
+      <!-- About me Container -->
+      <section
+        class="
+          relative
+          flex
+          bg-white
+          w-auto
+          md:w-3/4
+          m-3
+          md:m-10
+          mb-40
+          top-10
+          md:top-20
+          shadow-2xl
+          ring-4
+          ring-offset-4
+          ring-offset-bluegray-300
+          ring-offset-opacity-0
+          ring-white
+          ring-opacity-80
+          aboutmecontainer
+        "
+      >
+        <h3 class="text-3xl text-gray-900">About me</h3>
 
-<body class="fonts">
-  <!-- Background -->
-  <div class="background bg-gray-100 mix-blend-difference"></div>
-  <!-- Header -->
-  <header class="relative divide-4 divide-white">
-    <section class="bg-black  text-center py-5">
-      <h2 class="text-bluegray-100 text-5xl">William Lam</h2>
-    </section>
-    <section class=" bg-black flex md:justify-end md:px-5 items-center text-center bottom-20 ">
-      <nav
-        class=" shadow-2xl flex-auto -bottom-10 m-3 md:flex-auto md:m-5 md:py-0 py-0 md:px-0 text-xl text-bluegray-700 bg-gray-50 navigationitems ring-4 ring-offset-4 ring-offset-bluegray-300 ring-offset-opacity-0 ring-gray-500 ring-opacity-80 transition transform border-2 hover:-translate-y-1 hover:bg-gray-300 hover:border-cyan-400 ">
-        <a class="block m-0 p-1 md:p-1 w-full h-full" href="#">Portfolio</a>
-      </nav>
-      <nav
-        class=" flex-auto -bottom-10 m-3 md:flex-auto md:m-5 md:py-0 py-0 md:px-0 text-xl text-bluegray-700 bg-gray-50 navigationitems ring-4 ring-offset-4 ring-offset-bluegray-300 ring-offset-opacity-0 ring-gray-500 ring-opacity-80 transition transform border-2 hover:-translate-y-1 hover:bg-gray-300 hover:border-cyan-400 ">
-        <a class="block m-0 p-1 md:p-1 w-full h-full" href="#Work">Work</a>
-      </nav>
-      <nav
-        class=" flex-auto -bottom-10 m-3 md:flex-auto md:m-5 md:py-0 py-0 md:px-0 text-xl text-bluegray-700 bg-gray-50 navigationitems ring-4 ring-offset-4 ring-offset-bluegray-300 ring-offset-opacity-0 ring-gray-500 ring-opacity-80 transition transform border-2 hover:-translate-y-1 hover:bg-gray-300 hover:border-cyan-400 ">
-        <a class="block m-0 p-1 md:p-1 w-full h-full" href="#Contact">Contact</a>
-      </nav>
-      <nav
-        class=" flex-auto -bottom-10 m-3 md:flex-auto md:m-5 md:py-0 py-0 md:px-0 text-xl text-bluegray-700 bg-gray-50 navigationitems ring-4 ring-offset-4 ring-offset-bluegray-300 ring-offset-opacity-0 ring-gray-500 ring-opacity-80 transition transform border-2 hover:-translate-y-1 hover:bg-gray-300 hover:border-cyan-400 ">
-        <a class="block m-0 p-1 md:p-1 w-full h-full" href="#">Resume</a>
-      </nav>
-    </section>
-    <!-- Figure -->
-    <figure class="shadow-2xl"></figure>
-  </header>
-  <!-- Main -->
-  <main class="">
-    <!-- About me Container -->
-    <section
-      class=" relative flex bg-white w-auto md:w-3/4 m-3 md:m-10 mb-40 top-10 md:top-20 shadow-2xl ring-4 ring-offset-4 ring-offset-bluegray-300 ring-offset-opacity-0 ring-white ring-opacity-80 aboutmecontainer ">
-
-      <h3 class="text-3xl text-gray-900">About me</h3>
-
-      <article
-        class=" p-1 m-5 md:p-5 md:m-10 ring-4 ring-gray-300 ring-opacity-50 relative bg-gray-300 aboutmecontent ">
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto illum exercitationem quas ex sapiente
-          doloremque dolores nesciunt ipsa, eum illo perspiciatis adipisci pariatur sed magnam cum quod consequatur.
-          Totam, nihil? </p>
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto illum exercitationem quas ex sapiente
-          doloremque dolores nesciunt ipsa, eum illo perspiciatis adipisci pariatur sed magnam cum quod consequatur.
-          Totam, nihil? </p>
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto illum exercitationem quas ex sapiente
-          doloremque dolores nesciunt ipsa, eum illo perspiciatis adipisci pariatur sed magnam cum quod consequatur.
-          Totam, nihil? </p>
-      </article>
-    </section>
-    <!-- Work Container -->
-    <section
-      class=" relative bg-white m-3 md:m-10 mb-40 shadow-2xl md:top-40 ring-4 ring-offset-4 ring-offset-bluegray-300 ring-offset-opacity-0 ring-white ring-opacity-8 myworkcontainer ">
-
-      <h3 id="Work" class="text-3xl text-gray-900">My Works</h3>
-
-      <div class="myworkflex flex-column md:flex-row">
-        <!-- Photography Box -->
         <article
-          class="p-1 m-3 md:p-0 md:m-10 border-solid border-4 border-gray-400 ring-4 ring-gray-300 ring-opacity-50 ring-offset-4 ring-offset-bluegray-100 workphotography transition transform hover:-translate-y-1 hover:bg-opacity-20 hover:bg-gray-800 hover:border-cyan-400 ">
-          <a class=" absolute block m-0 p-0 md:p-3 w-full h-full text-bluegray-100 text-2xl hover:text-gray-100 "
-            href="#"> Photography</a>
+          class="
+            p-1
+            m-5
+            md:p-5 md:m-10
+            ring-4 ring-gray-300 ring-opacity-50
+            relative
+            bg-gray-300
+            aboutmecontent
+          "
+        >
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+            illum exercitationem quas ex sapiente doloremque dolores nesciunt
+            ipsa, eum illo perspiciatis adipisci pariatur sed magnam cum quod
+            consequatur. Totam, nihil?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+            illum exercitationem quas ex sapiente doloremque dolores nesciunt
+            ipsa, eum illo perspiciatis adipisci pariatur sed magnam cum quod
+            consequatur. Totam, nihil?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+            illum exercitationem quas ex sapiente doloremque dolores nesciunt
+            ipsa, eum illo perspiciatis adipisci pariatur sed magnam cum quod
+            consequatur. Totam, nihil?
+          </p>
         </article>
-        <!-- Animation Box -->
-        <article
-          class=" p-1 m-5 ring-4 ring-gray-300 ring-opacity-50 md:p-0 md:m-10 ring-offset-bluegray-100 ring-offset-4 bg-gray-300 workanimation hover:bg-opacity-60 hover:bg-gray-800 hover:border-gray-400 border-solid border-4 border-gray-300 hover:bg-opacity-60 hover:bg-gray-800 hover:border-cyan-400 transition transform hover:-translate-y-1 ">
-          <a class=" absolute block m-0 p-0 md:p-3 w-full h-full text-bluegray-100 text-2xl hover:text-gray-100 filter contrast-110 "
-            href="#">Animation </a>
-        </article>
-        <!-- Memes Box -->
-        <article
-          class="workmeme p-1 m-5 md:p-0 md:m-10 ring-4 ring-gray-300 ring-opacity-50 ring-offset-4 ring-offset-bluegray bg-gray-300 border-solid border-4 border-gray-300 hover:bg-opacity-60 hover:bg-gray-800 hover:border-cyan-400 transition transform hover:-translate-y-1 ">
-          <a class=" absolute block m-0 p-0 md:p-3 w-full h-full text-bluegray-100 text-2xl hover:border-cyan-400 "
-            href="#">Memes</a>
-        </article>
-        <!-- Excel Box -->
-        <article
-          class="border-solid border-4 border-gray-300 workexcel p-1 m-5 md:p-0 md:m-10 ring-4 ring-gray-300 ring-opacity-50 ring-offset-4 ring-offset-bluegray-100 bg-gray-300 border-solid border-4 border-gray-300 hover:bg-opacity-60 hover:bg-gray-800 hover:border-cyan-400 transition transform hover:-translate-y-1 ">
-          <a class=" absolute block m-0 p-0 md:p-3 w-full h-full text-bluegray-900 text-2xl " href="#">Excel</a>
-        </article>
-      </div>
-    </section>
-    <!-- Contacts Container -->
+      </section>
+      <!-- Work Container -->
+      <section
+        class="
+          relative
+          bg-white
+          m-3
+          md:m-10
+          mb-40
+          shadow-2xl
+          md:top-40
+          ring-4
+          ring-offset-4
+          ring-offset-bluegray-300
+          ring-offset-opacity-0
+          ring-white
+          ring-opacity-8
+          myworkcontainer
+        "
+      >
+        <h3 id="Work" class="text-3xl text-gray-900">My Works</h3>
 
-    <section
-      class=" flex relative flex-col md:flex-row m-3 md:m-10 mb-40 shadow-2xl w-auto h-auto top-0 md:top-60 ring-4 ring-offset-4 ring-offset-bluegray-300 ring-offset-opacity-0 ring-white ring-opacity-80 bg-white shadow-2xl contactscontainer ">
-      <h3 class="text-3xl text-gray-900" id="Contact">My contacts</h3>
-      <nav
-        class=" flex-auto md:flex-wrap relative p-6 px-5 m-5 w-full ring-4 ring-gray-300 ring-opacity-50 ring-offset-bluegray-100 ring-offset-4 text-center bg-gray-300 rounded-2xl contactsitem ">
-        <a href="https://www.youtube.com/channel/#"><span class="text-bluegray-700 text-xl">YouTube/channel</span></a>
-      </nav>
-      <nav
-        class=" flex-auto relative p-6 px-5 m-5 w-full ring-4 ring-gray-300 ring-opacity-50 ring-offset-bluegray-100 ring-offset-4 text-center bg-gray-300 rounded-2xl contactsitem ">
-        <a href="https://github.com/Williamlam343"> <span class="text-bluegray-700 text-xl">GitHub</span></a>
-      </nav>
-      <nav
-        class=" flex-auto relative p-6 px-5 m-5 w-full ring-4 ring-gray-300 ring-opacity-50 ring-offset-bluegray-100 ring-offset-4 text-center bg-gray-300 rounded-2xl contactsitem ">
-        <span class="text-bluegray-700 text-xl">555-5555</span>
-      </nav>
-      <nav
-        class=" flex-auto relative p-6 px-5 m-5 w-full ring-4 ring-gray-300 ring-opacity-50 ring-offset-bluegray-100 ring-offset-4 text-center bg-gray-300 rounded-2xl contactsitem ">
-        <a href="#"> <span class="flex-1 text-bluegray-700 text-xl">johndoe111@gmail.com</span></a>
-      </nav>
-    </section>
+        <div class="myworkflex flex-column md:flex-row">
+          <!-- Photography Box -->
+          <article
+            class="
+              p-1
+              m-3
+              md:p-0 md:m-10
+              border-solid border-4 border-gray-400
+              ring-4
+              ring-gray-300
+              ring-opacity-50
+              ring-offset-4
+              ring-offset-bluegray-100
+              workphotography
+              transition
+              transform
+              hover:-translate-y-1
+              hover:bg-opacity-20
+              hover:bg-gray-800
+              hover:border-cyan-400
+            "
+          >
+            <a
+              class="
+                absolute
+                block
+                m-0
+                p-0
+                bottom-12
+                md:p-3
+                w-full
+                h-full
+                text-bluegray-900 text-2xl
+              "
+              href="https://github.com/Williamlam343/weather-dashboard"
+            >
+              Weather Dashboard</a
+            >
+          </article>
+          <!-- Animation Box -->
+          <article
+            class="
+              p-1
+              m-5
+              ring-4 ring-gray-300 ring-opacity-50
+              md:p-0 md:m-10
+              ring-offset-bluegray-100 ring-offset-4
+              bg-gray-300
+              workanimation
+              hover:bg-opacity-60 hover:bg-gray-800 hover:border-gray-400
+              border-solid border-4 border-gray-300
+              hover:bg-opacity-60 hover:bg-gray-800 hover:border-cyan-400
+              transition
+              transform
+              hover:-translate-y-1
+            "
+          >
+            <a
+              class="
+                absolute
+                block
+                m-0
+                p-0
+                md:p-3
+                w-full
+                h-full
+                text-2xl
+                filter
+                contrast-110
+                bottom-12
+              "
+              href="https://github.com/Williamlam343/day-planner"
+              >Day Planner
+            </a>
+          </article>
+          <!-- Memes Box -->
+          <article
+            class="
+              workmeme
+              p-1
+              m-5
+              md:p-0 md:m-10
+              ring-4
+              ring-gray-300
+              ring-opacity-50
+              ring-offset-4
+              ring-offset-bluegray
+              bg-gray-300
+              border-solid border-4 border-gray-300
+              hover:bg-opacity-60 hover:bg-gray-800 hover:border-cyan-400
+              transition
+              transform
+              hover:-translate-y-1
+            "
+          >
+            <a
+              class="
+                absolute
+                block
+                m-0
+                p-0
+                md:p-3
+                w-full
+                h-full
+                text-bluegray-900 text-2xl
+                hover:border-cyan-400
+                bottom-12
+              "
+              href="#"
+              >Quiz App</a
+            >
+          </article>
+          <!-- Excel Box -->
+          <article
+            class="
+              border-solid border-4 border-gray-300
+              workexcel
+              p-1
+              m-5
+              md:p-0 md:m-10
+              ring-4
+              ring-gray-300
+              ring-opacity-50
+              ring-offset-4
+              ring-offset-bluegray-100
+              bg-gray-300
+              border-solid border-4 border-gray-300
+              hover:bg-opacity-60 hover:bg-gray-800 hover:border-cyan-400
+              transition
+              transform
+              hover:-translate-y-1
+            "
+          >
+            <a
+              class="
+                absolute
+                block
+                m-0
+                p-0
+                md:p-3
+                w-full
+                h-full
+                bottom-12
+                text-bluegray-900 text-2xl
+              "
+              href="#"
+              >Excel</a
+            >
+          </article>
+        </div>
+      </section>
+      <!-- Contacts Container -->
 
-  </main>
-  <!-- Footer -->
-  <footer>
-    <section class="absolute py-3 w-full bg-black"></section>
-  </footer>
-</body>
-
+      <section
+        class="
+          flex
+          relative
+          flex-col
+          md:flex-row
+          m-3
+          md:m-10
+          mb-40
+          shadow-2xl
+          w-auto
+          h-auto
+          top-0
+          md:top-60
+          ring-4
+          ring-offset-4
+          ring-offset-bluegray-300
+          ring-offset-opacity-0
+          ring-white
+          ring-opacity-80
+          bg-white
+          shadow-2xl
+          contactscontainer
+        "
+      >
+        <h3 class="text-3xl text-gray-900" id="Contact">My contacts</h3>
+        <nav
+          class="
+            flex-auto
+            md:flex-wrap
+            relative
+            p-6
+            px-5
+            m-5
+            w-full
+            ring-4
+            ring-gray-300
+            ring-opacity-50
+            ring-offset-bluegray-100
+            ring-offset-4
+            text-center
+            bg-gray-300
+            rounded-2xl
+            contactsitem
+          "
+        >
+          <a href="https://www.linkedin.com/in/william-lam-115325218/"
+            ><span class="text-bluegray-700 text-xl">Linkedin</span></a
+          >
+        </nav>
+        <nav
+          class="
+            flex-auto
+            relative
+            p-6
+            px-5
+            m-5
+            w-full
+            ring-4
+            ring-gray-300
+            ring-opacity-50
+            ring-offset-bluegray-100
+            ring-offset-4
+            text-center
+            bg-gray-300
+            rounded-2xl
+            contactsitem
+          "
+        >
+          <a href="https://github.com/Williamlam343">
+            <span class="text-bluegray-700 text-xl">GitHub</span></a
+          >
+        </nav>
+        <nav
+          class="
+            flex-auto
+            relative
+            p-6
+            px-5
+            m-5
+            w-full
+            ring-4
+            ring-gray-300
+            ring-opacity-50
+            ring-offset-bluegray-100
+            ring-offset-4
+            text-center
+            bg-gray-300
+            rounded-2xl
+            contactsitem
+          "
+        >
+          <span class="text-bluegray-700 text-xl">555-5555</span>
+        </nav>
+        <nav
+          class="
+            flex-auto
+            relative
+            p-6
+            px-5
+            m-5
+            w-full
+            ring-4
+            ring-gray-300
+            ring-opacity-50
+            ring-offset-bluegray-100
+            ring-offset-4
+            text-center
+            bg-gray-300
+            rounded-2xl
+            contactsitem
+          "
+        >
+          <a href="#">
+            <span class="flex-1 text-bluegray-700 text-xl"
+              >williamlam343@gmail.com</span
+            ></a
+          >
+        </nav>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <section class="absolute py-3 w-full bg-black"></section>
+    </footer>
+  </body>
 </html>
