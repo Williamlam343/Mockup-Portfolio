@@ -1,4 +1,4 @@
-# Mockup-Portfolio
+# Portfolio
 
 Link: https://williamlam343.github.io/mockup-portfolio/
 
