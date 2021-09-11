@@ -138,7 +138,7 @@ main {
   background-size: 100%;
   background-repeat: no-repeat;
   background-position-x: center;
-  background-position-y: 30%;
+  background-position-y: 50%;
 }
 
 /* contact section */
@@ -173,7 +173,5 @@ footer {
   }
   footer {
     bottom: -45rem;
-  }
-  main {
   }
 }
