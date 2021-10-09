@@ -104,7 +104,7 @@ main {
   flex: 1 1 100%;
   min-height: 300px;
   border-radius: 1rem;
-  background: url("../img/weatherdashboard.png");
+  background: url("../img/team-build.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: 20%;
@@ -114,7 +114,7 @@ main {
   flex: 1 1 25%;
   min-height: 200px;
   border-radius: 1rem;
-  background: url("../img/piecharts.png");
+  background: url("../img/tech-blog.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: 10%;
