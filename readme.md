@@ -1,6 +1,6 @@
 # Portfolio
 
-Link: https://williamlam343.github.io/mockup-portfolio/
+Link: https://williamlam343.github.io/my-portfolio/
 
 A portfolio page that features some of the projects and homeworks I've worked on. 
 
